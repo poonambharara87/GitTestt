@@ -25,6 +25,8 @@ Git Commands:
 14) Merge branch in parent branch or master branch: git merge branchname
 15) grapg of all branches: git log --all 
 
+Connect git to github:
+
 Connect git repository to github: git remote add origin url
 Push repo to github: git push origin master
 
