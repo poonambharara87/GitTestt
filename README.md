@@ -32,7 +32,7 @@ Connect git repository to github:
 1.1) through https: git remote add origin "https://github.com/user/repo.git"
 1.2) through ssh: git remote add ssh-origin "git@github.com:user/hello-world.git"
 2) changing remote origin from https to ssh: git remote set-url remote-name git@github.com:username/repositor.git
-3) Push repo to github: git push origin master or git push --set-upstream origin master
+3) Push repo to github: git push origin master or git push --set-upstream origin master or git push ssh-origin url
 4) checking which branch added/connected to remote: git branch -r
 5) pull changes on remote: git pull origin master
 6) create new branch and switch in that branch: git checkout -b branchname
@@ -55,6 +55,15 @@ Connect git repository to github:
 add files, which you don't want upload
 1) filename.extension (to ignore single file)
 2) *.temp(to ignore all files which has .temp extension)
+
+#Git Stash Commands
+1) save last changes when work is not done without commit after adding file or branch in staging area then type: git stash
+2) save last changes to file or branch use putting in stash for proper with message so, easily be identified: git stash push -m "updated in file1.txt"
+3) apply last changes which is in stash: stash apply
+4) remove stash single entry from stash list: git stash drop 1
+5) for add changes to file and delete file from stash: git stash pop 1
+6) to show all stash list: git stash list
+7) clean all stash list: git clean or git clean
 
 
 
